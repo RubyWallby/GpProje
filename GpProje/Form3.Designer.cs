@@ -30,16 +30,17 @@ namespace GpProje
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -47,6 +48,7 @@ namespace GpProje
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.CadetBlue;
+            this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button1);
@@ -60,15 +62,29 @@ namespace GpProje
             this.panel1.Size = new System.Drawing.Size(167, 556);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // button7
             // 
-            this.panel2.BackColor = System.Drawing.Color.CadetBlue;
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(167, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(757, 106);
-            this.panel2.TabIndex = 1;
+            this.button7.BackColor = System.Drawing.Color.BurlyWood;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button7.ForeColor = System.Drawing.Color.Teal;
+            this.button7.Location = new System.Drawing.Point(3, 491);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(161, 53);
+            this.button7.TabIndex = 5;
+            this.button7.Text = "Bilet";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.BurlyWood;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button3.ForeColor = System.Drawing.Color.Teal;
+            this.button3.Location = new System.Drawing.Point(3, 311);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(161, 56);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Koltuklar";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -83,6 +99,18 @@ namespace GpProje
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.BurlyWood;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button6.ForeColor = System.Drawing.Color.Teal;
+            this.button6.Location = new System.Drawing.Point(3, 432);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(161, 53);
+            this.button6.TabIndex = 4;
+            this.button6.Text = "Ödeme";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.BurlyWood;
@@ -96,17 +124,17 @@ namespace GpProje
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // button5
             // 
-            this.button3.BackColor = System.Drawing.Color.BurlyWood;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.ForeColor = System.Drawing.Color.Teal;
-            this.button3.Location = new System.Drawing.Point(3, 311);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(161, 56);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Koltuklar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.button5.BackColor = System.Drawing.Color.BurlyWood;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button5.ForeColor = System.Drawing.Color.Teal;
+            this.button5.Location = new System.Drawing.Point(3, 249);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(161, 56);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "İçecekler";
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
@@ -120,41 +148,15 @@ namespace GpProje
             this.button4.Text = "Yiyecekler";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // panel2
             // 
-            this.button5.BackColor = System.Drawing.Color.BurlyWood;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button5.ForeColor = System.Drawing.Color.Teal;
-            this.button5.Location = new System.Drawing.Point(3, 249);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(161, 56);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "İçecekler";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.BurlyWood;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button6.ForeColor = System.Drawing.Color.Teal;
-            this.button6.Location = new System.Drawing.Point(3, 432);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(161, 53);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "Ödeme";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.BurlyWood;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button7.ForeColor = System.Drawing.Color.Teal;
-            this.button7.Location = new System.Drawing.Point(3, 491);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(161, 53);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "Bilet";
-            this.button7.UseVisualStyleBackColor = false;
+            this.panel2.BackColor = System.Drawing.Color.CadetBlue;
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(167, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(757, 106);
+            this.panel2.TabIndex = 1;
             // 
             // label1
             // 
@@ -170,12 +172,26 @@ namespace GpProje
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(167, 106);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(757, 450);
             this.panel3.TabIndex = 2;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Silver;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button8.ForeColor = System.Drawing.Color.Teal;
+            this.button8.Location = new System.Drawing.Point(45, 3);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(119, 41);
+            this.button8.TabIndex = 1;
+            this.button8.Text = "Müşteriler";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // Form3
             // 
@@ -208,5 +224,6 @@ namespace GpProje
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button8;
     }
 }
